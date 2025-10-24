@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pumo Technovation</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left-sidebar">
+        <h3>Courses</h3>
+        <ul>
+            <li><a href="#" onclick="showCourseDescription('IT')">IT</a>
+                <ul>
+                    <li><a href="#" onclick="showCourseDescription('Web Development')">Web Development</a></li>
+                    <li><a href="#" onclick="showCourseDescription('Software Engineering')">Software Engineering</a></li>
+                    <li><a href="#" onclick="showCourseDescription('Data Science')">Data Science</a></li>
+                    <li><a href="#" onclick="showCourseDescription('Cybersecurity')">Cybersecurity</a></li>
+                    <li><a href="#" onclick="showCourseDescription('Network Administration')">Network Administration</a></li>
+                    <li><a href="#" onclick="showCourseDescription('Fullstack Development')">Fullstack Development</a></li>
+                    <li><a href="#" onclick="showCourseDescription('AWS Certification')">AWS Certification</a></li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="showCourseDescription('Business')">Business</a>
+                <ul>
+                    <li><a href="#" onclick="showCourseDescription('Finance')">Finance</a></li>
+                    <li><a href="#" onclick="showCourseDescription('Marketing')">Marketing</a></li>
+                    <li><a href="#" onclick="showCourseDescription('Entrepreneurship')">Entrepreneurship</a></li>
+                    <li><a href="#" onclick="showCourseDescription('Management')">Management</a></li>
+                    <li><a href="#" onclick="showCourseDescription('International Business')">International Business</a></li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="showCourseDescription('Design')">Design</a>
+                <ul>
+                    <li><a href="#" onclick="showCourseDescription('Graphic Design')">Graphic Design</a></li>
+                    <li><a href="#" onclick="showCourseDescription('UI/UX Design')">UI/UX Design</a></li>
+                    <li><a href="#" onclick="showCourseDescription('Interior Design')">Interior Design</a></li>
+                    <li><a href="#" onclick="showCourseDescription('Fashion Design')">Fashion Design</a></li>
+                    <li><a href="#" onclick="showCourseDescription('Industrial Design')">Industrial Design</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="#">Pumo Technovation</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Form.html">ADMISSION</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Events.html">EVENTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Blogs.html">BLOGS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header-content">
+            <h1>Welcome To</h1>
+            <h2>Pumo Technovation</h2>
+            <p>"Learning is never done without errors and defects."</p>
+            <a href="#" class="btn btn-primary btn-lg" id="exploreBtn">Explore Now</a>
+        </div>
+
+        <div class="container features">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="feature">
+                        <h3>Expert Teachers</h3>
+                        <p>Learn from the best educators in the industry.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature">
+                        <h3>Interactive Learning</h3>
+                        <p>Engage with interactive lessons and quizzes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature">
+                        <h3>Practical Skills</h3>
+                        <p>Gain hands-on experience through practical projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <h2>Course Description</h2>
+            <p id="courseDescription">Click on a course to see its description.</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
